@@ -17,4 +17,3 @@ local lazy_conf = require('plugins/lazy')
 
 require("lazy").setup(plugins)
 require("options")
-
