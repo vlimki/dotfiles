@@ -7,7 +7,7 @@ defHL = {
 require('bufferline').setup {
 	highlights = {
 		-- Not a great system
-    warning = defHL,info=defHL,error=defHL,hint=defHL,warning_diagnostic=defHL,errorDiagnostic=defHL,hintDiagnostic=defHL,infoDiagnostic=defHL
+    warning = defHL,info=defHL,error=defHL,hint=defHL,warning_diagnostic=defHL,error_diagnostic=defHL,hint_diagnostic=defHL,info_diagnostic=defHL
 	},
   options = {
     mode = "buffers", -- set to "tabs" to only show tabpages instead
