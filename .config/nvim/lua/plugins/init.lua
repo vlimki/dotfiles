@@ -5,6 +5,12 @@ return {
 		'vlyr/nordic.nvim',
 		config = require('plugins/nordic')
 	},
+	--{
+		--'nvim-focus/focus.nvim',
+		--config = function()
+			--require('focus').setup({ ui = {nowrap = true}})
+		--end
+	--},
 	{
 		'nvim-treesitter/nvim-treesitter',
 		config = function()
@@ -19,7 +25,12 @@ return {
   		'mrcjkb/haskell-tools.nvim',
   		version = '^3', -- Recommended
   		lazy = false, -- This plugin is already lazy
+		  dependencies = 'mfussenegger/nvim-dap',
+		config = function()
+			require('haskell-tools')
+		end
 	},
+	"savq/melange-nvim",
 	{
 	    "hrsh7th/nvim-cmp",
     	event = "InsertEnter",

@@ -7,11 +7,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "NotoSansM Nerd Font:size=10" };
 static const char dmenufont[]       = "NotoSansM Nerd Font:size=11";
-static const char col_gray1[]       = "#0d1119";
-static const char col_gray2[]       = "#1e222a";
-static const char col_gray3[]       = "#c8c5c6";
-static const char col_gray4[]       = "#c8c5c6";
-static const char col_cyan[]        = "#1e222a";
+static const char col_gray1[]       = "#ffffff";
+static const char col_gray2[]       = "#ebebeb";
+static const char col_gray3[]       = "#000000";
+static const char col_gray4[]       = "#000000";
+static const char col_cyan[]        = "#ebebeb";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3" };
+static const char *tags[] = { "1", "2" };
 
 static const Rule rules[] = {
 	/* xprop(1):

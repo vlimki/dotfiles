@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the current gap size
+current_gap=$(bspc config window_gap)
+
+# Toggle the gap size
+if [ "$current_gap" -eq 0 ]; then
+    bspc config window_gap 24
+    picom &
+else
+    bspc config window_gap 0
+    pkill picom
+fi

@@ -1,4 +1,4 @@
-return function()
+function x ()
 	require 'nordic'.setup {
 		theme = 'onedark',
 		transparent_bg = true,
@@ -20,3 +20,7 @@ return function()
 
 	vim.cmd.colorscheme 'nordic'
 end
+
+return function()
+end
+

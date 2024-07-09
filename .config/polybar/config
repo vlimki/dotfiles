@@ -36,7 +36,7 @@ color12 = ${xrdb:color12}
 color13 = ${xrdb:color13}
 color14 = ${xrdb:color14}
 color15 = ${xrdb:color15}
-dark-light = #1e222a
+dark-light = #f5f5f5
 active-light = #2e3440
 
 [bar/example]
@@ -72,7 +72,7 @@ font-3 = unifont:fontformat=truetype:size=11;4
 type = custom/script
 exec = ~/.config/polybar/scripts/polywins.sh 2>/dev/null
 format = <label>
-format-background = #1e222a
+format-background = #f5f5f5
 label = %output%
 label-padding = 0
 tail = true
@@ -89,13 +89,13 @@ content = " "
 [module/round-left]
 type = custom/text
 content = %{T3}%{T-}
-content-foreground = #1e222a
+content-foreground = #f5f5f5
 content-font = 2
 
 [module/round-right]
 type = custom/text
 content = %{T3}%{T-}
-content-foreground = #1e222a
+content-foreground = #f5f5f5
 content-font = 2
 
 [module/roundd-left]
@@ -136,38 +136,38 @@ reverse-scroll = false
 
 format = <label-state>
 
-ws-icon-0 = 1;%{F#EBCB8B}    
-ws-icon-1 = 2;%{F#BF616A}    
-ws-icon-2 = 3;%{F#8FBCBB}    
-ws-icon-3 = 4;%{F#81A1C1}
-ws-icon-4 = 5;%{F#A3BE8C}
+ws-icon-0 = 1;%{F#A06D00}    
+ws-icon-1 = 2;%{F#BF0021}    
+ws-icon-2 = 3;%{F#3d6568}    
+ws-icon-3 = 4;%{F#465aa4}
+ws-icon-4 = 5;%{F#3a684a}
 
 label-separator = " "
-label-separator-background = #1e222a
+label-separator-background = #f5f5f5
 
 label-focused =  %icon%  
 label-focused-foreground = ${colors.foreground}
-label-focused-underline = #2e3440
+label-focused-underline = #b1a39b
 label-focused-padding = 1
-label-focused-background = #1e222A
+label-focused-background = #f5f5f5
 label-focused-margin = 0 
 
 label-occupied =  %icon%  
-label-occupied-foreground = #646870  
-label-occupied-background = #1e222a
+label-occupied-foreground = #b1a39b
+label-occupied-background = #f5f5f5
 label-occupied-padding = 1
 label-occupied-margin = 0 
 
 label-empty = %icon%
 label-empty-foreground =   ${colors.foreground}
 label-empty-padding = 1
-label-empty-background = #1e222a
+label-empty-background = #f5f5f5
 label-empty-margin = 0 
 
 
 label-urgent = %icon%
 label-urgent-foreground = #88C0D0
-label-urgent-background = #1e222a
+label-urgent-background = #f5f5f5
 label-urgent-padding = 1
 
 [module/alsa]
@@ -205,8 +205,8 @@ type = internal/date
 interval = 60
 
 format = <label>
-format-background = #1e222a
-format-foreground = #82868e
+format-background = #f5f5f5
+format-foreground = #54433a
 
 date =   %H:%M%{F-}
 time-alt = 󰃭 %a, %b %d%{F-}
@@ -220,7 +220,7 @@ format = <label>
 format-prefix = "  " 
 label = %output% MB
 label-padding-right = 3
-format-foreground = #EBCB8B
+format-foreground = #a06d00
 
 [module/updates]
 type = custom/script
@@ -230,7 +230,7 @@ interval = 4600
 label =  %output%  
 label-padding-left = 2
 label-padding-right = 3
-label-foreground = #88C0D0
+label-foreground = #465AA4
 
 [module/powermenu]
 type = custom/text 
@@ -245,7 +245,7 @@ interface = wlan0
 interval = 3.0
 format-connected =  <label-connected>
 label-connected = "󰤪  %essid%" 
-label-connected-foreground = #A3BE8C 
+label-connected-foreground = #3a684a
 label-disconnected = "󰤮  Disconnected"
 label-disconnected-foreground = "#bf616a"
 
@@ -266,7 +266,7 @@ format-discharging-foreground = ${colors.foreground}
 format-discharging-background = ${colors.background}
 
 format-full-prefix = "  "
-format-full-prefix-foreground = #A3Be8c
+format-full-prefix-foreground = #3a684a
 format-foreground = ${colors.color4}
 format-background = ${colors.background}
 
@@ -323,7 +323,7 @@ format-prefix ="  "
 format =  <label> 
 
 label = CPU %percentage%%
-format-background = #1e222a
+format-background = #f5f5f5
 format-foreground = #B48EAD
 
 [module/xwindow]
