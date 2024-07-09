@@ -1,6 +1,14 @@
 vim.opt.termguicolors = true
 
+defHL = {
+  fg = '#7d6658',
+  bg = '#e2e2e2',
+}
 require('bufferline').setup {
+	highlights = {
+		-- Not a great system
+    warning = defHL,info=defHL,error=defHL,hint=defHL,warning_diagnostic=defHL,errorDiagnostic=defHL,hintDiagnostic=defHL,infoDiagnostic=defHL
+	},
   options = {
     mode = "buffers", -- set to "tabs" to only show tabpages instead
     numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
