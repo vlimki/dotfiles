@@ -136,9 +136,9 @@ reverse-scroll = false
 
 format = <label-state>
 
-ws-icon-0 = 1;%{F#A06D00}    
-ws-icon-1 = 2;%{F#BF0021}    
-ws-icon-2 = 3;%{F#3d6568}    
+ws-icon-0 = 1;%{F#bf0021}
+ws-icon-1 = 2;%{F#a06d00}    
+ws-icon-2 = 3;%{F#3a684a}
 ws-icon-3 = 4;%{F#465aa4}
 ws-icon-4 = 5;%{F#3a684a}
 
@@ -271,7 +271,7 @@ format-foreground = ${colors.color4}
 format-background = ${colors.background}
 
 label-discharging-foreground = ${colors.foreground}
-ramp-capacity-foreground =  #A0E8A2  
+ramp-capacity-foreground =  #3a684a
 label-charging-foreground = ${colors.foreground}
 
 label-padding-left = 6
@@ -291,7 +291,7 @@ animation-charging-3 = "  "
 animation-charging-4 = "  "
 
 
-animation-charging-foreground = #DF8890
+animation-charging-foreground = #BF0021
 animation-charging-framerate = 750
 
 format-charging-padding = 1

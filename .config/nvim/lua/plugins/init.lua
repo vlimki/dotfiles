@@ -6,8 +6,11 @@ return {
 		config = function()
 			require'nvim-treesitter.configs'.setup {
 				highlight = {
-					enable = true
-				}
+					enable = false,
+					use_languagetree = true
+				},
+				indent = {enable = true},
+				additional_vim_regex_highlighting = false
 			}
 		end
 	},
@@ -30,7 +33,6 @@ return {
   		'mrcjkb/haskell-tools.nvim',
   		version = '^3', -- Recommended
   		lazy = false, -- This plugin is already lazy
-		  dependencies = 'mfussenegger/nvim-dap',
 		config = function()
 			require('haskell-tools')
 		end
@@ -70,7 +72,9 @@ return {
 		end
 	},
 	{
+		event = "InsertEnter",
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
-	  dependencies = { 'nvim-lua/plenary.nvim' }
-  }
+	  dependencies = { 'nvim-lua/plenary.nvim' },
+  },
 }
+
