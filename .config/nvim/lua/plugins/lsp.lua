@@ -34,6 +34,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 
 lsp.tsserver.setup {}
 lsp.svelte.setup {}
+lsp.pyright.setup {}
 
 -- disable semanticTokens
 on_init = function(client, _)

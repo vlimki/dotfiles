@@ -64,9 +64,6 @@ modules-right = updates battery empty-space-small empty-space-small empty-space-
 ; modules-right = updates battery wlan mem xbacklight round-left time round-right empty-space-small
 font-0 = NotoSansM Nerd Font:style=Bold:pixelsize=10;4
 font-1 = NotoSansM Nerd Font:style=Bold:pixelsize=17;4
-font-2 = Material Design Icons:style=Bold:size=15;4
-font-3 = unifont:fontformat=truetype:size=11;4
-
 
 [module/polywins]
 type = custom/script
@@ -137,15 +134,14 @@ reverse-scroll = false
 format = <label-state>
 
 ws-icon-0 = 1;%{F#bf0021}
-ws-icon-1 = 2;%{F#a06d00}    
-ws-icon-2 = 3;%{F#3a684a}
-ws-icon-3 = 4;%{F#465aa4}
-ws-icon-4 = 5;%{F#3a684a}
+ws-icon-1 = 2;%{F#a06d00}
+ws-icon-2 = 3;%{F#3a684a}
+ws-icon-3 = 4;%{F#465aa4}
 
 label-separator = " "
 label-separator-background = #f5f5f5
 
-label-focused =  %icon%  
+label-focused = %icon%     
 label-focused-foreground = ${colors.foreground}
 label-focused-underline = #b1a39b
 label-focused-padding = 1
@@ -247,7 +243,7 @@ format-connected =  <label-connected>
 label-connected = "󰤪  %essid%" 
 label-connected-foreground = #3a684a
 label-disconnected = "󰤮  Disconnected"
-label-disconnected-foreground = "#bf616a"
+label-disconnected-foreground = "#bf0021"
 
 [module/battery]
 type = internal/battery
